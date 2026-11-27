@@ -271,13 +271,13 @@ function Home({ owner, onLogout }) {
         </section>
       )}
 
-      {push !== 'granted' && push !== 'unsupported' && (
+      {/* {push !== 'granted' && push !== 'unsupported' && (
         <section className="card">
           <h2>Phone notifications</h2>
           <p className="muted">Turn on notifications to be alerted even when this app is closed.</p>
           <button className="primary" onClick={enablePush}>{push === 'denied' ? 'Retry (allow in browser settings)' : 'Enable notifications'}</button>
         </section>
-      )}
+      )} */}
       {/* {push === 'granted' && <p className="muted">🔔 Notifications enabled on this device. <button className="link" onClick={enablePush}>Re-register</button></p>} */}
 
       <section className="card">
