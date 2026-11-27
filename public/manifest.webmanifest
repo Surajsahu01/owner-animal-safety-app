@@ -1,0 +1,9 @@
+{
+  "name": "Animal Owner Alerts",
+  "short_name": "Animal Alerts",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#166534",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

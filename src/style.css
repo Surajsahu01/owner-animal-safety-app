@@ -1,0 +1,59 @@
+:root{
+  color-scheme:light;
+  --bg:#f4f7f5;--card:#ffffff;--text:#14211a;--muted:#5f6f66;--line:#dfe7e2;
+  --green:#15803d;--green-dark:#166534;--green-soft:#e8f5ec;
+  --red:#dc2626;--red-soft:#fef2f2;--amber:#b45309;--amber-soft:#fffbeb;
+  --shadow:0 1px 2px rgba(20,33,26,.05),0 4px 14px rgba(20,33,26,.06);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);
+  background-image:radial-gradient(circle at 100% 0,#dff3e5 0,transparent 40%)}
+.wrap{max-width:860px;margin:0 auto;padding:18px 16px 40px}
+.narrow{max-width:420px;padding-top:56px}
+h1{margin:0 0 4px;font-size:1.55rem;color:var(--green-dark)}
+h2{font-size:1.05rem;margin:22px 0 10px}
+h3{margin:0;font-size:1rem}
+.muted{color:var(--muted);margin:2px 0 10px;font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;
+  display:flex;flex-direction:column;gap:11px;box-shadow:var(--shadow)}
+.card h2{margin:0}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.right{display:flex;gap:8px;align-items:center}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.row input{flex:1 1 130px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.grid .card{margin:0}
+input{padding:11px 12px;border:1px solid #cbd7d0;border-radius:10px;font-size:1rem;background:#fff;color:var(--text);width:100%}
+input::placeholder{color:#8a9a91}
+input:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(21,128,61,.15)}
+button{padding:9px 15px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--text);font-size:.95rem;cursor:pointer}
+button:hover{background:#f3f7f4}
+button.primary{background:var(--green);color:#fff;border-color:var(--green);font-weight:600}
+button.primary:hover{background:var(--green-dark)}
+button:disabled{opacity:.6;cursor:default}
+button.link{border:0;background:none;color:var(--green);padding:4px 0;text-align:left;text-decoration:underline}
+button.link:hover{background:none;color:var(--green-dark)}
+.danger-text{color:var(--red)!important}
+.error{color:var(--red);background:var(--red-soft);border:1px solid #fecaca;border-radius:10px;padding:9px 12px;margin:6px 0;font-size:.93rem}
+a{color:var(--green)}
+.pill,.tag{font-size:.7rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#eef2ef;color:var(--muted);white-space:nowrap}
+.pill.danger{background:#fee2e2;color:#991b1b}
+.pill.warn{background:#fef3c7;color:#92400e}
+.pill.ok,.tag.ok{background:var(--green-soft);color:var(--green-dark)}
+.banner{display:flex;justify-content:space-between;gap:10px;padding:13px 15px;border-radius:14px;margin:14px 0;border:1.5px solid;box-shadow:var(--shadow)}
+.banner p{margin:4px 0}
+.banner.danger{background:var(--red-soft);border-color:#f87171;color:#7f1d1d}
+.banner.warn{background:var(--amber-soft);border-color:#fbbf24;color:#78350f}
+.banner.ok{background:var(--green-soft);border-color:#86efac;color:#14532d}
+.list{list-style:none;padding:0;margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.list li{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:11px 15px;border-bottom:1px solid var(--line)}
+.list li:last-child{border:0}
+.list small{margin-left:auto;color:var(--muted)}
+.loc{display:flex;flex-direction:column;gap:8px}
+.loc p{margin:0}
+.map{width:100%;height:220px;border:1px solid var(--line);border-radius:12px;background:#eef2ef}
+a.btn{display:inline-block;padding:9px 15px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--green-dark);text-decoration:none;font-size:.95rem}
+a.btn:hover{background:#f3f7f4}
+select{padding:10px 12px;border:1px solid #cbd7d0;border-radius:10px;font-size:1rem;background:#fff;color:var(--text)}
+.switch{display:flex;align-items:center;gap:8px;font-weight:600;cursor:pointer}
+input[type=checkbox]{width:20px;height:20px;accent-color:var(--green)}
